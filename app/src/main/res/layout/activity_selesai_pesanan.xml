@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.jhotel_android_whisnusamudra.SelesaiPesananActivity">
+
+    <TextView
+        android:id="@+id/idPesanStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="66dp"
+        android:text="ID pesanan:"/>
+
+    <TextView
+        android:id="@+id/idPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/idPesanStatic"
+        android:layout_marginStart="78dp"
+        android:layout_toEndOf="@+id/idPesanStatic"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/biayaStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idPesanStatic"
+        android:layout_marginTop="55dp"
+        android:layout_toStartOf="@+id/idPesan"
+        android:text="Biaya:"/>
+
+    <TextView
+        android:id="@+id/biaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/idPesan"
+        android:layout_alignTop="@+id/biayaStatic"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/jmlHariStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/biayaStatic"
+        android:layout_below="@+id/biayaStatic"
+        android:layout_marginTop="48dp"
+        android:text="Jumlah hari:"/>
+
+    <TextView
+        android:id="@+id/jmlHari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/biaya"
+        android:layout_alignTop="@+id/jmlHariStatic"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/tanggalStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/biayaStatic"
+        android:layout_below="@+id/jmlHariStatic"
+        android:layout_marginTop="39dp"
+        android:text="Tanggal pesan:"/>
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tanggalStatic"
+        android:layout_alignBottom="@+id/tanggalStatic"
+        android:layout_alignStart="@+id/jmlHari"
+        android:text="TextView"/>
+
+    <Button
+        android:id="@+id/batal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggalStatic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Batal"/>
+
+    <Button
+        android:id="@+id/selesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/batal"
+        android:layout_below="@+id/batal"
+        android:layout_marginTop="32dp"
+        android:text="Selesai"/>
+</RelativeLayout>

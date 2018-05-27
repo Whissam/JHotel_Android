@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.jhotel_android_whisnusamudra.LoginActivity">
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:id="@+id/passEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/emailEt"
+        android:layout_below="@+id/emailEt"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passEt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Log In"
+        />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:text="Register here!"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
